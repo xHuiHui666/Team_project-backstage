@@ -1,0 +1,23 @@
+server:
+  port: 21252
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/db_class?characterEncoding=utf-8
+      username: root
+      password: 145Z2dren@
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+      table-prefix: tb_
+      table-underline: false
+  configuration:
+    map-underscore-to-camel-case: false
+
+
+logging:
+  level:
+    root: debug
